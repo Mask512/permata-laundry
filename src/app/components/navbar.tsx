@@ -79,7 +79,7 @@ export default function Navbar({
               </NavigationMenu>
             </div>
             <div className="flex items-center">
-              <CTAButton text="Booking" url="#" />
+              <CTAButton text="Booking" whatsapp />
             </div>
           </div>
         </nav>
@@ -109,7 +109,7 @@ export default function Navbar({
               <SheetContent className="overflow-y-auto" side="left">
                 <SheetHeader>
                   <SheetTitle>
-                    <a href={logo.url} className="flex items-center gap-2">
+                    <Link href={logo.url} className="flex items-center gap-2">
                       <ExportedImage
                         priority
                         src={logo.src}
@@ -121,7 +121,7 @@ export default function Navbar({
                       <span className="text-lg font-semibold tracking-tighter">
                         {logo.title}
                       </span>
-                    </a>
+                    </Link>
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-6 p-4">
@@ -134,7 +134,7 @@ export default function Navbar({
                   </Accordion>
                 </div>
                 <SheetFooter>
-                  <CTAButton text="Booking" url="#" />
+                  <CTAButton text="Booking" whatsapp />
                 </SheetFooter>
               </SheetContent>
             </Sheet>
@@ -165,7 +165,7 @@ const renderMenuItem = (item: MenuItem) => {
     <NavigationMenuItem key={item.title}>
       <NavigationMenuLink
         href={item.url}
-        className="group font-outfit text-muted hover:bg-primary hover:text-background inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-base font-medium transition-colors hover:underline active:text-secondary"
+        className="group font-outfit text-muted hover:bg-primary hover:text-background active:text-secondary inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-base font-medium transition-colors hover:underline"
       >
         {item.title}
       </NavigationMenuLink>
@@ -190,15 +190,15 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <a key={item.title} href={item.url} className="text-md font-semibold">
+    <Link key={item.title} href={item.url} className="text-md font-semibold">
       {item.title}
-    </a>
+    </Link>
   );
 };
 
 const SubMenuLink = ({ item }: { item: MenuItem }) => {
   return (
-    <a
+    <Link
       className="hover:bg-muted hover:text-accent-foreground flex min-w-80 flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none"
       href={item.url}
     >
@@ -211,7 +211,7 @@ const SubMenuLink = ({ item }: { item: MenuItem }) => {
           </p>
         )}
       </div>
-    </a>
+    </Link>
   );
 };
 

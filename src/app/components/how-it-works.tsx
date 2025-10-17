@@ -40,7 +40,7 @@ export default function HowItWorks() {
             <p className="text-muted-foreground font-bold lg:px-0">
               {howItWorks.description}
             </p>
-            <CTAButton text="Mulai order pertamamu" url="#" />
+            <CTAButton text="Mulai order pertamamu" whatsapp />
           </div>
         </div>
         <div className="grid grid-cols-1 gap-4 overflow-hidden lg:grid-cols-4 lg:gap-8">

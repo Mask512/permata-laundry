@@ -18,6 +18,14 @@ import sepatuImg from "@/app/assets/images/services/sepatu.jpg";
 import setrikaImg from "@/app/assets/images/services/setrika.jpg";
 import { StaticImageData } from "next/image";
 import smileImg from "@/app/assets/images/smile.jpg";
+
+export const info = {
+  name: "Permata Laundry",
+  address:
+    "Jl. Mancagar No.2a, Cipedes, Kec. Cipedes, Kab. Tasikmalaya,Jawa Barat 46133",
+  phoneNumber: "6282119931767",
+};
+
 // NAVBAR
 
 export const logoImage = {
@@ -325,5 +333,5 @@ export const location = {
     "Jl. Mancagar No.2a, Cipedes, Kec. Cipedes, Kab. Tasikmalaya,Jawa Barat 46133",
   phoneNumber: "+62 821-1993-1767",
   tagline: "FRESH | FAST | CLEAN",
-  name: 'Permata Laundry'
+  name: "Permata Laundry",
 };

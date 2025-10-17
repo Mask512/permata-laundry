@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://permatalaundry.id/sitemap.xml
+Sitemap: https://permatalaundry.com/sitemap.xml

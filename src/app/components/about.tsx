@@ -11,6 +11,7 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { aboutUs } from "@/data";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -60,7 +61,7 @@ export default function AboutUs() {
                 size="lg"
                 className="bg-secondary text-primary font-bold duration-300 hover:text-white"
               >
-                Explore Layanan
+                <Link href="#services">Explore Layanan</Link>
                 <ArrowRightCircle className="transition-transform duration-700 group-hover:translate-x-1" />
               </Button>
             </div>

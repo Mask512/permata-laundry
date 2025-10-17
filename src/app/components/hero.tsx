@@ -81,7 +81,7 @@ export default function Hero({
             {buttons.primary && (
               <CTAButton
                 text={buttons.primary.text}
-                url={buttons.primary.url}
+                whatsapp
               />
             )}
             {buttons.secondary && (
