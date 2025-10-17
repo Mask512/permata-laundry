@@ -1,24 +1,24 @@
-import type { Metadata } from 'next';
-import { Urbanist, Outfit } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Urbanist, Outfit } from "next/font/google";
+import "./globals.css";
 
 const urbanistSans = Urbanist({
-  variable: '--font-urbanist-sans',
-  subsets: ['latin'],
+  variable: "--font-urbanist-sans",
+  subsets: ["latin"],
 });
 
 const outfitSans = Outfit({
-  variable: '--font-outfit-sans',
-  subsets: ['latin'],
+  variable: "--font-outfit-sans",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title:
-    'Permata Laundry Tasikmalaya | Cuci Lipat, Setrika, dan Antar-Jemput Gratis',
+    "Permata Laundry Tasikmalaya | Cuci Lipat, Setrika, dan Antar-Jemput Gratis",
   description:
-    'Permata Laundry di cipedes - Tasikmalaya, layanan laundry cepat, bersih, dan wangi. Cuci lipat, cuci setrika, dry clean, dan laundry rumah tangga. Gratis antar-jemput ke rumah Anda!',
+    "Permata Laundry di cipedes - Tasikmalaya, layanan laundry cepat, bersih, dan wangi. Cuci lipat, cuci setrika, dry clean, dan laundry rumah tangga. Gratis antar-jemput ke rumah Anda!",
   keywords:
-    'laundry Cipedes, laundry Tasikmalaya, jasa cuci setrika, dry clean Tasikmalaya, laundry rumah tangga, antar jemput laundry, cuci lipat cepat, Permata Laundry',
+    "laundry Cipedes, laundry Tasikmalaya, jasa cuci setrika, dry clean Tasikmalaya, laundry rumah tangga, antar jemput laundry, cuci lipat cepat, Permata Laundry",
 };
 
 export default function RootLayout({
@@ -28,6 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="5fe2a9fe-71f2-45b4-9189-f57aefbcbd80"
+        ></script>
+      </head>
       <body
         className={`${urbanistSans.variable} ${outfitSans.variable} to-background min-h-dvh bg-gradient-to-br from-white font-sans antialiased`}
       >
